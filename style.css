@@ -1,5 +1,92 @@
+/* entire body styling */
+
 * {
-    font-family: "Playwrite DE Grund", cursive;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "Josefin Sans", sans-serif;
     font-style: normal;
-    font-optical-sizing: auto;
+}
+
+nav, .nav_bar-list{
+    display: flex;
+}
+
+.nav_bar{
+    justify-content: space-around;
+    align-items: center;
+    height: 18vh;
+    color: #fd8333;
+}
+
+.nav_bar-list{ 
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 3rem;
+    font-size: 1.2rem;
+}
+
+.nav_bar-list a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav_bar-list a:hover{
+    color: #fd8333;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.nav_bar-logo{
+    margin-top: 15px;
+}
+
+
+.nav_bar-logo:hover{
+    cursor: pointer;
+}
+
+
+#mobile_nav{
+    display: none;
+}
+
+.mobile_menu
+{
+    position: relative;
+    display: inline-block;
+}
+
+.mobile-menu-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.mobile-menu-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links{
+    position: absolute;
+    top: 100%;
+    right:0;
+    background-color: #fd8333;
+    width: 80%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }

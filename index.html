@@ -4,21 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Aman Prabhat">
-    <meta name="author" content="Aman Prabhat">
+    <meta name="description" keyword="Aman Prabhat, Portfolio of Aman Prabhat, Web developer Portfolio, best Portfolio, top 10 web developer Portfolio">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <script src="app.js"></script>
     <title>Aman Prabhat - Portfolio</title>
 </head>
 <body>
     <header>
-
+        <nav class="nav_bar" id="desktop_nav">
+            <div class="nav_bar-logo"><img src="./assets/Aman Prabhat Logo.png" alt="Logo"></div>
+            <div>
+                <ul class="nav_bar-list">
+                    <li class="nav_bar-list-item"><a href="#about">About</a></li>
+                    <li class="nav_bar-list-item"><a href="#experience">Experience</a></li>
+                    <li class="nav_bar-list-item"><a href="#projects">Projects</a></li>
+                    <li class="nav_bar-list-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="mobile_nav">
+            <div class="nav_bar-logo"><img src="./assets/Aman Prabhat Logo.png" alt="Logo"></div>
+            <div class="mobile-menu">
+                <div class="mobile-menu-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li class="nav_bar-list-item"><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li class="nav_bar-list-item"><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li class="nav_bar-list-item"><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li class="nav_bar-list-item"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
     </header>
     <section>
 
     </section>
     <footer>
-        <p>Copyright &copy; 2020 Aman Prabhat</p>
+       
     </footer>
     
 </body>
